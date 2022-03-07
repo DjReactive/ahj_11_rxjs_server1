@@ -37,9 +37,12 @@ function generateMessage() {
 
 //for (let i = 0; i < 3; i++) generateMessage();
 
-const inter = setInterval(() => {
+setInterval(() => {
   generateMessage();
-  if (allMessages >= 20) clearInterval(inter);
+  if (allMessages.length >= 20) {
+    allMessages = [];
+    newMessages = [];
+  };
 }, 5000);
 
 function getAllMessages() {
