@@ -70,7 +70,7 @@ app.use(async ctx => {
       return;
     default:
       ctx.response.body = ctx.request.query.method;
-      ctx.response.status = 404;
+      ctx.response.status = 400;
       return;
   }
 });
