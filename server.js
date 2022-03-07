@@ -77,7 +77,7 @@ app.use(async ctx => {
     case '/messages/all':
       ctx.response.body = JSON.stringify(getAllMessages());
       ctx.response.status = 200;
-        eturn;
+      return;
     default:
       ctx.response.body = ctx.request.query.method;
       ctx.response.status = 400;
