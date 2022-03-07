@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
+  "author": "djreactive",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "forever": "^4.0.3",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.7"
+  }
+}
