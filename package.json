@@ -15,9 +15,7 @@
     "koa": "^2.13.4",
     "koa-body": "^4.2.0",
     "koa-static": "^5.0.0",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
+    "uuid": "^8.3.2",
     "@faker-js/faker": "^6.0.0-alpha.7"
   }
 }
