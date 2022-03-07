@@ -37,7 +37,10 @@ function generateMessage() {
 
 //for (let i = 0; i < 3; i++) generateMessage();
 
-setInterval(() => generateMessage(), 5000);
+const inter = setInterval(() => {
+  generateMessage();
+  if (allMessages >= 20) clearInterval(inter);
+}, 5000);
 
 function getAllMessages() {
   let response = { status: 'ok', timestamp: Date.now(), };
